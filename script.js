@@ -1,12 +1,13 @@
-// Function to load featured items
-async function loadFeaturedItems() {
+// Function to load items dynamically
+async function loadItems(sectionId, itemsType) {
     try {
         const response = await fetch('assets/data/items.json');
         const data = await response.json();
-        const featuredItems = data.featured;
+        const items = data[itemsType]; // Get the correct item type (e.g., "featured", "forSale")
 
-        const gallery = document.getElementById('featuredGallery');
-        featuredItems.forEach(item => {
+        const gallery = document.getElementById(sectionId);
+
+        items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('item');
             itemDiv.innerHTML = `
@@ -17,9 +18,16 @@ async function loadFeaturedItems() {
             gallery.appendChild(itemDiv);
         });
     } catch (error) {
-        console.error('Error loading featured items:', error);
+        console.error(`Error loading items for ${itemsType}:`, error);
     }
 }
 
-// Call the function to load featured items
-document.addEventListener('DOMContentLoaded', loadFeaturedItems);
+// Load featured items for the index page
+if (document.getElementById('featuredGallery')) {
+    loadItems('featuredGallery', 'featured');
+}
+
+// Load "For Sale" items for the for-sale page
+if (document.getElementById('forSaleGallery')) {
+    loadItems('forSaleGallery', 'forSale');
+}
