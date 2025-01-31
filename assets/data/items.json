@@ -37,22 +37,5 @@
             "price": "$180",
             "image": "assets/images/item4.jpg"
         }
-    ],
-    "sold": [
-        {
-            "name": "Antique Rocking Chair",
-            "status": "SOLD",
-            "image": "assets/images/item4.jpg"
-        },
-        {
-            "name": "Shabby Chic Desk",
-            "status": "SOLD",
-            "image": "assets/images/item5.jpg"
-        },
-        {
-            "name": "Barnwood Coffee Table",
-            "status": "SOLD",
-            "image": "assets/images/item6.jpg"
-        }
     ]
 }
