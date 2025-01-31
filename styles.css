@@ -244,3 +244,54 @@ button:hover {
     font-size: 16px;
     color: #5C3D2E;
 }
+
+/* For Sale and Sold Pages */
+.items-for-sale, .items-sold {
+    text-align: center;
+    padding: 20px;
+}
+
+.items-for-sale h1, .items-sold h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.items-for-sale p, .items-sold p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #7B6B5E;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.item p {
+    font-size: 14px;
+    color: #5C3D2E;
+}
