@@ -3,9 +3,14 @@ async function loadItems(sectionId, itemsType) {
     try {
         const response = await fetch('assets/data/items.json');
         const data = await response.json();
-        const items = data[itemsType]; // Get the correct item type (e.g., "featured", "forSale")
+        const items = data[itemsType]; // Get the appropriate type of items
 
         const gallery = document.getElementById(sectionId);
+
+        if (!gallery) {
+            console.error(`Gallery section with ID '${sectionId}' not found.`);
+            return;
+        }
 
         items.forEach(item => {
             const itemDiv = document.createElement('div');
@@ -18,7 +23,7 @@ async function loadItems(sectionId, itemsType) {
             gallery.appendChild(itemDiv);
         });
     } catch (error) {
-        console.error(`Error loading items for ${itemsType}:`, error);
+        console.error(`Error loading items for '${itemsType}':`, error);
     }
 }
 
