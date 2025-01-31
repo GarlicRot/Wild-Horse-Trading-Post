@@ -18,7 +18,7 @@ async function loadItems(sectionId, itemsType) {
             itemDiv.innerHTML = `
                 <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
-                <p>${item.price || item.status}</p>
+                <p>${item.price}</p>
             `;
             gallery.appendChild(itemDiv);
         });
@@ -35,9 +35,4 @@ if (document.getElementById('featuredGallery')) {
 // Load "For Sale" items for the for-sale page
 if (document.getElementById('forSaleGallery')) {
     loadItems('forSaleGallery', 'forSale');
-}
-
-// Load "Sold" items for the sold page
-if (document.getElementById('soldGallery')) {
-    loadItems('soldGallery', 'sold');
 }
