@@ -4,12 +4,12 @@
             "name": "Rustic Wooden Chair",
             "price": "$120",
             "image": "assets/images/item1.jpg"
-        }
+        },
         {
             "name": "Vintage Dresser",
             "price": "$250",
             "image": "assets/images/item2.jpg"
-        }
+        },
         {
             "name": "Farmhouse Table",
             "price": "$400",
@@ -21,17 +21,17 @@
             "name": "Rustic Wooden Chair",
             "price": "$120",
             "image": "assets/images/item1.jpg"
-        }
+        },
         {
             "name": "Vintage Dresser",
             "price": "$250",
             "image": "assets/images/item2.jpg"
-        }
+        },
         {
             "name": "Farmhouse Table",
             "price": "$400",
             "image": "assets/images/item3.jpg"
-        }
+        },
         {
             "name": "Rustic Coffee Table",
             "price": "$180",
@@ -43,12 +43,12 @@
             "name": "Antique Rocking Chair",
             "status": "SOLD",
             "image": "assets/images/item4.jpg"
-        }
+        },
         {
             "name": "Shabby Chic Desk",
             "status": "SOLD",
             "image": "assets/images/item5.jpg"
-        }
+        },
         {
             "name": "Barnwood Coffee Table",
             "status": "SOLD",
